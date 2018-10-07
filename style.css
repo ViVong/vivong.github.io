@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    background: url('./images/mountain.jpg');
+}
+
+#background{
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut{
+    0%{
+        background: white;
+        min-height: 1252px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+      position: relative;
+      left: 0;
+      opacity: 0;
+    }
+  
+    75% {
+        position: relative;
+        left: 40%;
+        opacity: 1;
+    }
+    100%{
+        position: relative;
+        left: 40%;
+    }
+}
+
+#topbar{
+    top: 0rem;
+    min-height: 7rem;
+    animation: fadeIn 4s;
+    background: grey;
+}
+
+.title-nav {
+    left: -80%;
+    text-align: center;
+    width: 100%;
+    font-size: 3em;
+    position: absolute;
+    top: 1.5rem;
+}
+
+.title-nav h6{
+    animation: fadeInRight 6s;
+    animation-fill-mode: forwards;
+}
+
+.title-nav p{
+    font-size: 0.5em;
+    animation-name: fadeInRight;
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
