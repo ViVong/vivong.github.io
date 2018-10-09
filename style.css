@@ -1,15 +1,21 @@
 *{
     margin: 0;
     padding: 0;
+    display: inline-block;
 }
 
 body{
     background-size: cover;
     background-attachment: fixed;
     background: url('./images/mountain.jpg');
+    min-height: 1252px;
 }
 
 #background{
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    max-width: 100%;
     animation: fadeOut 2s;
 }
 
@@ -17,6 +23,7 @@ body{
     0%{
         background: white;
         min-height: 1252px;
+        width: 100vw;
         opacity: 1;
     }
     100%{
@@ -35,47 +42,88 @@ body{
 
 @keyframes fadeInRight {
     0% {
-      position: relative;
-      left: 0;
-      opacity: 0;
+        opacity: 0;
     }
-  
-    75% {
-        position: relative;
-        left: 40%;
+    100%{
+        left: 3.5em;
         opacity: 1;
+    }
+}
+
+@keyframes fadeInSubtitle {
+    0% {
+        opacity: 0;
     }
     100%{
         position: relative;
-        left: 40%;
+        left: -4em;
+        opacity: 1;
     }
 }
 
 #topbar{
-    top: 0rem;
-    min-height: 7rem;
+    position: fixed;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    min-height: 6rem;
     animation: fadeIn 4s;
-    background: grey;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    font-family: sans-serif;
+    font-weight: 700;
+    background: url('./images/grey.png');
 }
 
 .title-nav {
-    left: -80%;
-    text-align: center;
-    width: 100%;
-    font-size: 3em;
     position: absolute;
-    top: 1.5rem;
+    font-size: 3em;
+    color: aliceblue;
 }
 
 .title-nav h6{
-    animation: fadeInRight 6s;
+    position: relative;
+    left: -6em;
+    opacity: 1;
+    animation: fadeInRight;
+    animation-duration: 4s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
 }
 
 .title-nav p{
-    font-size: 0.5em;
-    animation-name: fadeInRight;
-    animation-duration: 6s;
-    animation-delay: 1s;
+    position: relative;
+    top: 1.2em;
+    left: -20em;
+    opacity: 0;
+    font-size: 0.4em;
+    animation-name: fadeInSubtitle;
+    animation-duration: 4s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
+    font-weight: 100;
+}
+
+.link-nav{ 
+    opacity: 0;
+    position: absolute;
+    width: 15em;
+    right: 10%;
+    top: 2.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    animation: fadeIn 6s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 200;
+}
+
+a:hover{
+    color: blue;
 }
