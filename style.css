@@ -28,15 +28,13 @@ body{
         text-align: center;
     }
     .title-nav p{
-
+        opacity: 0;
     }
     .link-nav{
-        width: 100%;
-        text-align: center;
+        justify-content: space-around;
     }
 }
 */
-
 #background{
     position: absolute;
     left: 0;
