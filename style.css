@@ -250,6 +250,9 @@ footer{
     height: 300px;
     background: url('./images/mountainbottom.jpg');
     color: azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer h1{
@@ -269,7 +272,5 @@ footer h2{
 }
 
 footer a{
-    position: absolute;
-    left: 48%;
-    bottom: 25px;
+    font-size: 2.5em;
 }
