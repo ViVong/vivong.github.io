@@ -219,6 +219,24 @@ article p{
     justify-content: center;
 }
 
+#reappear{
+    position: fixed;
+    right: 2px;
+    top: 2px;
+    width: 15px;
+    background: grey;
+    visibility: hidden;
+    z-index: 1;
+}
+
+#disappear{
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 15px;
+    background: transparent;
+}
+
 #aboutme{
     position: absolute;
     left: 0;

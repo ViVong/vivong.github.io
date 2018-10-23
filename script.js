@@ -43,3 +43,16 @@ function showDivs(n) {
     Slides[slideIndex-1].style.display = "block"; 
     Text[slideIndex-1].style.display = "block";
 }
+
+function visibility(){
+  var VisibleTopbar = document.getElementById('topbar');
+  var Reappear = document.getElementById('reappear');
+  if (VisibleTopbar.style.visibility == "visible"){
+    VisibleTopbar.style.visibility = "hidden";
+    Reappear.style.visibility = "visible";
+  }
+  else{
+    VisibleTopbar.style.visibility = "visible";
+    Reappear.style.visibility = "hidden";
+  }
+}

@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id='background'></div>
-    <header id='topbar' >
+    <header id='topbar' style="visibility: visible">
         <nav class="title-nav" id="titlenav">
             <h6>&emsp;&ensp;Vi Vong</h6>
             <p id='p1'>&nbsp;Junior Software Developer</p>
@@ -19,7 +19,9 @@
             <a href="#aboutme">About</a>
             <a href="#portfolio">Portfolio</a>
         </nav>
+        <button id="disappear" onclick="visibility()">X</button>
     </header>
+    <button id="reappear" onclick="visibility()">O</button>
     <section id='portfolio'>
         <h1>Portfolio</h1>
         <article>
