@@ -102,6 +102,7 @@ body{
     animation-fill-mode: forwards;
     font-family: sans-serif;
     font-weight: 700;
+    transition: min-height 0.5s;
     background: url('./images/grey.png');
 }
 
@@ -109,6 +110,7 @@ body{
     position: absolute;
     font-size: 3em;
     color: aliceblue;
+    transition: top 1s;
 }
 
 .title-nav h6{
@@ -140,6 +142,7 @@ body{
     width: 15em;
     right: 10%;
     top: 2.5rem;
+    transition: top 0.5s;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -185,25 +188,41 @@ article{
     position: relative;
     top: 150px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
 article img{
-    height: 30%;
-    width: 30%;
+    height: 400px;
+    width: 600px;
+}
+
+article button{
+    width: 30px;
+    background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+    border: 1px solid black;
+}
+
+article button:hover{
+    background-image: linear-gradient(to top, #eb94d0, #2079b0);
+    border: 1px solid whitesmoke;
 }
 
 article p{
     position: relative;
     top: 20px;
     max-width: 25%;
+    margin: auto;
+}
+
+.carosel{
+    display: flex;
+    justify-content: center;
 }
 
 #aboutme{
     position: absolute;
     left: 0;
-    top: 1245px;
+    top: 1205px;
     width: 100%;
     height: 900px;
     background-image: url('images/starrynight.png');
@@ -233,7 +252,7 @@ article p{
 footer{
     position: absolute;
     left: 0;
-    top: 2145px;
+    top: 2105px;
     width: 100%;
     height: 300px;
     background: url('./images/mountainbottom.jpg');
