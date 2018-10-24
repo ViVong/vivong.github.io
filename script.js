@@ -4,6 +4,7 @@
   const LinkNav = document.getElementById('linknav');
   const TitleNav = document.getElementById('titlenav'); 
   const P1 = document.getElementById('p1');
+  const modal = document.getElementById('myModal');
 
   window.onscroll = function() {scrollFunction()};
 
@@ -20,6 +21,12 @@
       P1.style.top = "1.2em";
     }
   }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 })();
 
@@ -55,4 +62,24 @@ function visibility(){
     VisibleTopbar.style.visibility = "visible";
     Reappear.style.visibility = "hidden";
   }
+}
+
+function collapse(){
+  const Expand = document.getElementById("expand");
+  const Expand1 = document.getElementById("expand1");
+  const Expand2 = document.getElementById("expand2");
+  if (Expand.style.maxHeight == "5rem"){
+    Expand.style.maxHeight = "0rem";
+    Expand1.style.maxHeight = "0rem";
+    Expand2.style.maxHeight = "0rem";
+  }
+  else{
+    Expand.style.maxHeight = "5rem";
+    Expand1.style.maxHeight = "5rem";
+    Expand2.style.maxHeight = "5rem";
+  }
+}
+
+function modalUp(){
+  document.getElementById('myModal').style.display = "inherit";
 }

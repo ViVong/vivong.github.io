@@ -32,16 +32,20 @@
                 <img class="slides" src="images/virutalpetamok.png">
                 <button onclick="plusDivs(1)">&#10095;</button>
             </div>
-            <p class="desc">Virtual pet is an app where you create, then take care of, a virutal pet. You have to balance the values of the pet in order to keep it from dying or running away.</p>
-            <p class="desc">Virtual pets shelter is an app that puts virtual pets into a shelter. It takes the previous app and puts them into a class where you can manage more than one pet.</p>
-            <p class="desc">Virtual pets amok takes what virtual pet shelter did but instead categorizes pets between organic and robot. Organic pets have to be fed and water while robotic one have to be oil periodically.</p>
+            <button id="description" onclick="collapse()">Show Description</button>
+            <p class="desc" id="expand" style="max-height: 0rem;">Virtual pet is an app where you create, then take care of, a virutal pet. You have to balance the values of the pet in order to keep it from dying or running away.</p>
+            <p class="desc" id="expand1" style="max-height: 0rem;">Virtual pets shelter is an app that puts virtual pets into a shelter. It takes the previous app and puts them into a class where you can manage more than one pet.</p>
+            <p class="desc" id="expand2" style="max-height: 0rem;">Virtual pets amok takes what virtual pet shelter did but instead categorizes pets between organic and robot. Organic pets have to be fed and water while robotic one have to be oil periodically.</p>
         </article>
     </section>
     <section id="aboutme">
         <h1>About Me</h1>
         <article>
             <img src="images/headshot.jpg">
-            <p>I've been coding since since I was 16, building my skill set up to now. I've gained experience coding in Basic, C, CSS, HTML, and Java. I love learning new things and seeing how they can apply to what I already know.</p>
+            <button id='about' onclick="modalUp()">About Me</button>
+            <div id="myModal" class="modal" style="display: none;">
+                <p>I've been coding since since I was 16, building my skill set up to now. I've gained experience coding in Basic, C, CSS, HTML, and Java. I love learning new things and seeing how they can apply to what I already know.</p>
+            </div>
         </article>
     </section>
     <footer id="contact">
