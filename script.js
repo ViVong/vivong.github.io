@@ -70,7 +70,7 @@ function collapse(){
   const Expand2 = document.getElementById("expand2");
   const Expand3 = document.getElementById("expand3");
   const Expand4 = document.getElementById("expand4");
-  if (Expand.style.maxHeight == "5rem"){
+  if (Expand.style.maxHeight == "10rem"){
     Expand.style.maxHeight = "0rem";
     Expand1.style.maxHeight = "0rem";
     Expand2.style.maxHeight = "0rem";
@@ -78,14 +78,15 @@ function collapse(){
     Expand4.style.maxHeight = "0rem";
   }
   else{
-    Expand.style.maxHeight = "5rem";
-    Expand1.style.maxHeight = "5rem";
-    Expand2.style.maxHeight = "5rem";
-    Expand3.style.maxHeight = "5rem";
-    Expand4.style.maxHeight = "7rem";
+    Expand.style.maxHeight = "10rem";
+    Expand1.style.maxHeight = "10rem";
+    Expand2.style.maxHeight = "10rem";
+    Expand3.style.maxHeight = "10rem";
+    Expand4.style.maxHeight = "20rem";
   }
 }
 
 function modalUp(){
   document.getElementById('myModal').style.display = "inherit";
+  document.getElementById('myModal').style.position = "fixed";
 }

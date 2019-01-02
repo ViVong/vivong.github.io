@@ -10,20 +10,40 @@
     }
 }
 
-/*
-@media only screen and (max-width: 640px) {
-    .title-nav h6{
-        width: 100%;
-        text-align: center;
+@media only screen and (max-width: 767px) {
+    #aboutme img{
+        max-width: 98%;
     }
-    .title-nav p{
-        opacity: 0;
+    .slides{
+        max-height: 300px;
+        width: 90%;
+    }
+    #description{
+        max-width: 90%;
+    }
+    #about{
+        max-width: 90%;
+    }
+    .desc{
+        max-width: 95%;
     }
     .link-nav{
-        justify-content: space-around;
+        min-width: 100%;
+        left: 0;
+    }
+    .title-nav p{
+        display: none;
+    }
+    .title-nav h6{
+        display: none;
+    }
+    #background p{
+        display: inline !important;
+    }
+    #background h6{
+        display: inline !important;
     }
 }
-*/
 
 #fadein{
     position: absolute;
@@ -126,13 +146,12 @@
 .link-nav{ 
     opacity: 0;
     position: absolute;
-    width: 15em;
+    width: 20em;
     right: 10%;
-    top: 2.5rem;
     transition: top 0.5s;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: space-around;
     animation: fadeIn 6s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
@@ -153,12 +172,36 @@ a:hover{
 #background{
     position: absolute;
     top: 0;
+    left: 0;
     width: 98%;
     height: 400px;
     transform: scale(1.04);
     background: url('./images/Circuit.png');
-    background-size: contain;
+    background-size: cover;
     background-attachment: fixed;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: azure;
+}
+
+#background h6{
+    position: absolute;
+    top: 140px;
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    display: none;
+}
+
+#background p{
+    position: absolute;
+    top: 200px !important;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    display: none;
 }
 
 #portfolio{
@@ -190,7 +233,6 @@ article{
 
 .slides{
     height: 400px;
-    width: 600px;
 }
 
 article button{
@@ -211,7 +253,6 @@ article p{
     overflow: hidden;
     background: url("./images/grey.png");
     padding-left: 10px;
-    padding-right: 10px;
     border-radius: 3%;
     opacity: 0.9;
 }
@@ -265,7 +306,6 @@ article p{
 
 #aboutme img{
     max-height: 600px;
-    max-width: 400px;
     margin: auto;
     border-radius: 1%;
     box-shadow: 5px 5px 5px black;
