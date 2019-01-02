@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id='fadein'></div>
     <div id='background'></div>
     <header id='topbar' style="visibility: visible">
         <nav class="title-nav" id="titlenav">
@@ -30,28 +31,34 @@
                 <img class="slides" src="images/virutalpet.png">
                 <img class="slides" src="images/virutalpetshelter.png">
                 <img class="slides" src="images/virutalpetamok.png">
+                <img class="slides" src="images/review-site.png">
+                <img class="slides" src="images/wecancodeit.png">
                 <button onclick="plusDivs(1)">&#10095;</button>
             </div>
             <button id="description" onclick="collapse()">Show Description</button>
-            <p class="desc" id="expand" style="max-height: 0rem;">Virtual pet is an app where you create, then take care of, a virutal pet. You have to balance the values of the pet in order to keep it from dying or running away.</p>
-            <p class="desc" id="expand1" style="max-height: 0rem;">Virtual pets shelter is an app that puts virtual pets into a shelter. It takes the previous app and puts them into a class where you can manage more than one pet.</p>
-            <p class="desc" id="expand2" style="max-height: 0rem;">Virtual pets amok takes what virtual pet shelter did but instead categorizes pets between organic and robot. Organic pets have to be fed and water while robotic one have to be oil periodically.</p>
+            <p class="desc" id="expand" style="max-height: 0rem;">Virtual Pet is an game where you create then take care of a virtual pet. Similar to Tamagotchi your task is to balance the different values of your pet in order to keep it alive. All values with decrease over time and be replenished by actions which require energy. Coded entirely in Java.</p>
+            <p class="desc" id="expand1" style="max-height: 0rem;">Virtual Pets Shelter is an app where you take care of an entire shelter of pets. It takes the pets in the Virtual Pet project and creates multiple instances of them while giving the option to manage them all at once. Each pet's values decreases differently and the feature to add or adopt pets has been added. Coded in Java.</p>
+            <p class="desc" id="expand2" style="max-height: 0rem;">Virtual Pets Amok takes what Virtual Pet Shelter did but instead categorizes pets between organic and robot, as well as cats and dogs. Organic pets need to be fed and watered while robotic one need to be oil periodically. Cats have a shared litterbox while dog each have a designated pen. Pets can be any combination of robotic/organic and cat/dog following the rules of either. Coded with Java.</p>
+            <p class="desc" id="expand3" style="max-height: 0rem;">Review Site (Full stack) is a site where users can add and delete reviews. Reviews are sorted by tags which can also be add and deleted. You are also about to add comments to each review. Everything is stored and called to using an internal database. Coded with Java, Spring MVC, HTML, CSS, AJAX, SQL.</p>
+            <p class="desc" id="expand4" style="max-height: 0rem;">WeCanCodeIt is an app made for teacher and librarians. Inspired by the Domino's book-it program, librarians are able to login to a created profile and create reading groups. They are then able to add books to each group using Google Books API and assign point values to each book. Discussion question and set goals can also be added to groups which are also assigned points. Reader users on the other end can then see and interact with these as well as send friend requests between users in the same group. Coded using Java, HTML, CSS, JavaScript, JQuery, SQL, JPA, API, JSON, Ajax.</p>
         </article>
     </section>
     <section id="aboutme">
         <h1>About Me</h1>
         <article>
-            <img src="images/headshot.jpg">
+            <img src="images/me.jpg">
             <button id='about' onclick="modalUp()">About Me</button>
             <div id="myModal" class="modal" style="display: none;">
-                <p>I've been coding since since I was 16, building my skill set up to now. I've gained experience coding in Basic, C, CSS, HTML, and Java. I love learning new things and seeing how they can apply to what I already know.</p>
+                <p>I have been coding since I was 16, gradually building up my skill set to now. The passion I have for both coding and learning have stayed strong through the years.  It is the sense of wonder from starting something new and the satisfaction from completing a challenging task that I enjoy the most. I have experience using Java, C, Basic, CSS, HTML, JSON, SQL, JQuery, Spring, Hibernate, AJAX, JPA, Rest APIs. I'm used to working in teams using SCRUM/Agile methodology. I love learning new things and seeing how they can apply to what I already know.</p>
             </div>
         </article>
     </section>
-    <footer id="contact">
+    <footer>
         <h1>Contact Me</h1>
-        <a href="https://www.linkedin.com/in/vi-vong-788688171/">LinkedIn</a>
-        <a href="https://github.com/ViVong">GitHub</a>
+        <div id="contact">
+        <a href="https://www.linkedin.com/in/vi-vong-788688171/"><img src="images/linkedin.png"></a>
+        <a href="https://github.com/ViVong"><img src="images/git.png"></a>
+        </div>
         <a href="#background">Back to Top</a>
     </footer>
     <script src = "script.js"></script>

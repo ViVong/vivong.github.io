@@ -68,15 +68,21 @@ function collapse(){
   const Expand = document.getElementById("expand");
   const Expand1 = document.getElementById("expand1");
   const Expand2 = document.getElementById("expand2");
+  const Expand3 = document.getElementById("expand3");
+  const Expand4 = document.getElementById("expand4");
   if (Expand.style.maxHeight == "5rem"){
     Expand.style.maxHeight = "0rem";
     Expand1.style.maxHeight = "0rem";
     Expand2.style.maxHeight = "0rem";
+    Expand3.style.maxHeight = "0rem";
+    Expand4.style.maxHeight = "0rem";
   }
   else{
     Expand.style.maxHeight = "5rem";
     Expand1.style.maxHeight = "5rem";
     Expand2.style.maxHeight = "5rem";
+    Expand3.style.maxHeight = "5rem";
+    Expand4.style.maxHeight = "7rem";
   }
 }
 
